@@ -1,75 +1,80 @@
+body{
+    background-color: hwb(0 100% 0%);
+}
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    /*vai tirar otods os pontinhos ao lado da escrita (Li)*/
-    list-style:none;
-    /*vai tirar o sublinhado da pagina*/
+    box-sizing: border-box;
+    /* tirou os pontinhos da lista desordenada */
     text-decoration: none;
+    list-style: none;
+
 }
 
 :root{
-    --degrade-btn: linear-gradient(#5DB881,#8AB49B )
+    --green: #5db881;
+    --gray: #666;
+    --white: #ffffff;
 }
 
-/*classes reutilizaveis*/
+.background-white{
+    background: var(--white) ;
+}
+
+/* classes reutilizaveis */
 .container{
-    font-family: Arial, Helvetica, sans-serif;
     max-width: 1400px;
     padding: 0 5%;
     margin: 0 auto;
 }
-
 .btn-gradiente{
-    border: 2px solid #5bbb81;
-    padding: 10px;
-    border-radius: 15px;
+    padding: 10px 25px;
+    color: rgb(126, 126, 126);
+    border: var(--green);
     cursor: pointer;
-    background-color:white;
-    color: #726f6f;
-    
 }
 
-/*classes do site*/
+/* classes do site */
 nav{
-    /*logotipo e a ul vão ficar um ao lado do outro*/
+    /* o logotipo e a ul vão ficar um ao lado do outro */
     display: flex;
-    /*joga a lista para o outro lado ajudando no espaçamento da nossa ul*/
     justify-content: space-between;
     align-items: center;
+    /* espaçamento interno */
+    padding: 20px 0;
+
 }
 
+/* links estilização */
 .ul{
     display: flex;
     align-items: center;
 }
-
 .ul li{
-    /*espaçamento externpo*/
-    margin: 0 20px;
-    font: 15px;
+    margin: 0 30px;
+    font-size: 20px;
+}
+.ul li a{
+    color: var(--gray);
 }
 
-ul li a{
-    color: #726f6f;
+.ul li a {
+    color: var(--gray);
+    text-decoration: none; /* Remove o sublinhado dos links */
 }
 
-/*main*/
-main .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
+/* sublinhado gradiente */
+.sublinhado-gradiente {
+    background-image: linear-gradient(90deg, var(--green), var(--green));
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    transition: background-size 500ms ease;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.main-text{
-    width: 50px;
-    
+.sublinhado-gradiente:hover {
+    background-size: 100% 2px;
 }
-
-.main-text h1{
-    font-size: 3.5rem;
-     
-}
-
