@@ -78,3 +78,43 @@ nav{
 .sublinhado-gradiente:hover {
     background-size: 100% 2px;
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ul li {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .btn-gradiente {
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel-inner {
+        display: block;
+    }
+
+    .carousel-item {
+        width: 100%;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        top: 90%;
+    }
+}
