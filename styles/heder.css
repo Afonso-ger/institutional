@@ -1,0 +1,109 @@
+:root {
+    --green: #5db881;
+    --gray: #666;
+    --white: #ffffff;
+    --black: #1d1d1d;
+}
+
+header {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite quebrar a linha quando necessário */
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 60;
+    font-size: 25px;  /* Aumenta o tamanho da fonte */
+}
+
+.nav-item.active a {
+    color: var(--black);
+    border-bottom: 3px solid var(--green);
+}
+
+.sublinhado-gradiente {
+    background-image: linear-gradient(90deg, var(--green), var(--green));
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    transition: background-size 500ms ease;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px; /* Aumenta também o tamanho nos links com efeito sublinhado */
+}
+
+.sublinhado-gradiente:hover {
+    background-size: 100% 2px;
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column; /* Coloca a logo e os hiperlinks em uma coluna */
+        align-items: center; /* Centraliza a logo e os hiperlinks */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Adiciona um espaçamento abaixo da logo */
+    }
+
+    #nav_list {
+        flex-direction: column; /* Coloca os links em uma coluna */
+        gap: 16px; /* Adiciona um espaçamento entre os links */
+    }
+}

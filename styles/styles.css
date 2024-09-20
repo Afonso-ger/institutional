@@ -1,0 +1,22 @@
+:root {
+    --green: #5db881;
+    --gray: #666;
+    --white: #ffffff;
+    --black: #1d1d1d;
+}
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 0px 2px var(--green);
+    transition: background-color 0.3s ease;
+}
+
+.btn-default:active {
+    background-color: var(--green);
+}
