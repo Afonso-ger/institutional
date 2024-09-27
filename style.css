@@ -205,6 +205,30 @@ h6 {
 	width: 80%;
 	margin: 0 auto;
 }
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	list-style: none;
+	padding: 0;
+  }
+  
+  .social-icons li {
+	display: inline-block;
+  }
+  
+  .social-icons img {
+	width: 40px; /* Ajuste o tamanho conforme necessário */
+	height: auto; /* Mantém a proporção da imagem */
+	transition: transform 0.3s; /* Adiciona uma transição suave */
+  }
+  
+  .social-icons img:hover {
+	transform: scale(1.1);
+} /* Aumenta o tamanho da imagem ao passar o mouse */
+
+
 .about-btn {
 	color: #4d9a6c;
 	padding: 10px 40px;
