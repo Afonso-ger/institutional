@@ -16,8 +16,13 @@
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg">
-  <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img style="width: 160px;" src="images/logo-branco.png" alt="logo" class="logo-1"> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+  <div class="container"> 
+    <a class="navbar-brand navbar-logo" href="#"> 
+      <img style="width: 160px;" src="images/logo-branco.png" alt="logo" class="logo-1"> 
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+      <span class="fas fa-bars"></span> 
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">Home</a> </li>
@@ -25,40 +30,49 @@
         <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Soluções para você</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">FAQ'S</a> </li>
         <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Depoimentos</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contact</a> </li>
-        <li class="nav-item"><a class="nav-link" href="https://cliente.keeplives.com.br/">Área do cliente</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">Contato</a> </li>
+        <li class="nav-item"><a class="nav-link" href="https://cliente.keeplives.com.br/" target="_blank">Área do cliente</a></li>           
+        <li class="nav-item"><a class="nav-link" href="https://keeplives.aggilizador.com.br/" target="_blank">Cotação</a></li>           
       </ul>
     </div>
   </div>
 </nav>
-<!-- End Navbar --> 
+<!-- End Navbar -->
 <!-------Banner Start------->
 <section class="banner" data-scroll-index='0'>
+  <div class="shape"></div>
   <div class="banner-overlay">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12">
-          <div class="banner-text">
-            <h2 class="white">Segurança e carinho para o que você mais valoriza!</h2>
-            <p class="banner-text white">Mais de duas décadas atendendo com exclusividade e dinamismo a cada perfil de cliente. A tecnologia e a inovação estão em nosso DNA.</p>
-            <div>
-              <ul class="social-icons">
-                <li><a href="https://www.instagram.com/keeplives.seguros/"><img src="images/insta.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
-                <li><a href="https://www.linkedin.com/company/keeplives/about/"><img src="images/linkedin.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
-                <li><a href="https://www.facebook.com/keeplives.seguros"><img src="images/facebook.png" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
-              </ul>
+          <div class="banner-content">
+            <div class="banner-text">
+              <h2 class="white">Segurança e carinho para o que você mais valoriza!</h2>
+              <p class="white">Mais de duas décadas atendendo com exclusividade e dinamismo a cada perfil de cliente. A tecnologia e a inovação estão em nosso DNA.</p>
+              <a class="button" href="https://keeplives.aggilizador.com.br/" target="_blank">
+                Faça já a sua cotação
+              </a>
             </div>
           </div>
+          <div>
+            <ul class="social-icons">
+              <!--
+              <li><a href="https://www.instagram.com/keeplives.seguros/"><img src="images/insta.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
+              <li><a href="https://www.linkedin.com/company/keeplives/about/"><img src="images/linkedin.png" class="wow fadeInUp" data-wow-delay="0.4s"/></a></li>
+              <li><a href="https://www.facebook.com/keeplives.seguros"><img src="images/facebook.png" class="wow fadeInUp" data-wow-delay="0.7s"/></a></li>
+              -->
+            </ul>
+          </div>
         </div>
-        <!--<div class="col-md-4 col-sm-12"> <img src="images/iphone-screen.png" class="img-fluid wow fadeInUp"/> </div>-->
       </div>
     </div>
   </div>
 </section>
 <!-------Banner End------->
 
+
 <!-------About End------->
-<section class="about section-padding prelative" data-scroll-index='1'>
+
   <section class="about section-padding prelative" data-scroll-index='1'>
     <div class="container">
       <div class="row">
@@ -89,15 +103,12 @@
                 </div>
               </div>
             </div>
-            <a href="#" class="about-btn">Saber mais</a> </div>
+            <!-- <a href="#" class="about-btn">Saber mais</a> </div> -->
         </div>
       </div>
     </div>
   </section>
-
-  
-<!-------About End------->
-
+<!-------About End-------> 
 
 <!-------Video Start------->
 <section class="video-section prelative text-center white">
@@ -110,6 +121,7 @@
           <div class="iframe-src">
             <iframe src="https://www.youtube.com/embed/Qg3_2ejHrDI?rel=0&showinfo=0" allowfullscreen></iframe>
           </div>
+          <button id="exit-button">Fechar</button>
         </div>
       </div>
     </div>
@@ -133,21 +145,21 @@
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
                 <div class="media-body text-right media-right-margin">
                   <h5>Faturamento</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <p>Plataforma inovadora, projetada especialmente para simplificar o acesso e o download dos seus faturamentos mensais. Entendemos a importância de ter suas faturas à mão, por isso desenvolvemos uma solução que coloca o controle total da sua documentação financeira ao alcance dos seus dedos.</p>
                 </div>
                 <div class="media-right icon-border"> <span class="fa fa-bolt" aria-hidden="true"></span> </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
                 <div class="media-body text-right media-right-margin">
                   <h5>Envio de movimentação mensal</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <p>Envie movimentações mensais de inclusão e exclusão de vidas para a apólice vigente. - Atualize facilmente a lista de beneficiários dos planos oferecidos pela empresa. - Mantenha o controle preciso sobre as vidas cobertas em tempo real.</p>
                 </div>
                 <div class="media-right icon-border"> <span class="fa fa-battery-full" aria-hidden="true"></span> </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.6s">
                 <div class="media-body text-right media-right-margin">
                   <h5>Vencimento de apólice</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <p>Visualize todas as apólices ativas em um painel centralizado e acompanhe os prazos de vencimento com um calendário interativo.</p>
                 </div>
                 <div class="media-right icon-border"> <span class="fa fa-wifi" aria-hidden="true"></span> </div>
               </div>
@@ -160,7 +172,7 @@
                 <div class="media-left icon-border media-right-margin"> <span class="fa fa-check-double" aria-hidden="true"></span> </div>
                 <div class="media-body text-left">
                   <h5>Avisos e comunicados</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <p>Interface intuitiva para clientes enviarem pedidos ou solicitações. Acompanhamento em tempo real do status de cada solicitação. Notificações automáticas sobre atualizações ou resoluções de pedidos. Alertas personalizados enviados aos clientes sobre faturas próximas do vencimento.</p>
                 </div>
               </div>
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.4s">
@@ -174,7 +186,7 @@
                 <div class="media-left icon-border media-right-margin"> <span class="fa fa-hdd" aria-hidden="true"></span> </div>
                 <div class="media-body text-left">
                   <h5>Emissão de propostas comerciais </h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididugnt ut labore</p>
+                  <p>Crie propostas personalizadas com rapidez e profissionalismo e Acompanhamento do status de cada proposta em tempo real.</p>
                 </div>
               </div>
             </div>
@@ -183,7 +195,7 @@
       </div>
     </div>
   </div>
-</section>
+</section>            
 <!-------Features End-------> 
 
 <!-------Team Start------->
@@ -277,6 +289,7 @@
 <!-------FAQ End-------> 
 
 <!-------Contact Start------->
+<!-------Contact Start-------> 
 <section class="contact section-padding" data-scroll-index='6'>
   <div class="container">
     <div class="row">
@@ -292,23 +305,20 @@
               <form id="contact_form" action="">
                 <div class="row">
                   <div class="col">
-                    <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Full Name">
+                    <input type="text" id="your_name" class="form-input w-100" name="Nome" placeholder="Nome" required>
                   </div>
                   <div class="col">
-                    <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email">
+                    <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email" required>
                   </div>
                 </div>
-                
-                <!-- Campo de Seleção do Assunto -->
-                <select id="subject" class="form-input w-100 required" name="subject" required>
-                  <option value="" disabled selected>Assunto*</option>
+                <select id="assunto" name="assunto" class="form-input w-100" required>
+                  <option value="">Escolha um assunto</option>
                   <option value="saude">Saúde</option>
                   <option value="seguro_auto">Seguro Auto</option>
                   <option value="seguro_vida">Seguro de Vida</option>
                   <option value="outros">Outros</option>
                 </select>
-
-                <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
+                <textarea class="form-input w-100" id="message" placeholder="Mensagem" name="message"></textarea>
                 <button class="btn-grad w-100 text-uppercase" type="submit" name="button">enviar</button>
               </form>
             </div>
@@ -322,21 +332,33 @@
                 </div>
                 <div class="contact-item media"> <i class="fa fa-mobile media-left media-right-margin"></i>
                   <div class="media-body">
-                    <p class="text-uppercase">Phone</p>
+                    <p class="text-uppercase">Telefone</p>
                     <p class="text-uppercase"><a class="text-white" href="tel:+15173977100">(11) 5509-7152</a> </p>
                   </div>
                 </div>
                 <div class="contact-item media"> <i class="fa fa-envelope media-left media-right-margin"></i>
                   <div class="media-body">
                     <p class="text-uppercase">E-mail</p>
-                    <p class="text-uppercase"><a class="text-white" href="mailto:abcdefg@gmail.com">comercial@keeplives.com.b</a> </p>
+                    <p class="text-uppercase"><a class="text-white" href="mailto:abcdefg@gmail.com">comercial@keeplives.com.br</a> </p>
                   </div>
                 </div>
                 <div class="contact-item media"> <i class="fa fa-clock media-left media-right-margin"></i>
                   <div class="media-body">
                     <p class="text-uppercase">Horário de Funcionamento</p>
-                    <p class="text-uppercase">Seg. - Sex. 08:00 - 17:00.</p>
+                    <p class="text-uppercase">Seg. - Sex. 08:00 - 18:00.</p>
                   </div>
+                </div>
+                <!-- Redes Sociais -->
+                <div class="social-icons text-center mt-4">
+                  <a href="https://www.instagram.com/keeplives.seguros/" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/company/keeplives/about/" target="_blank" class="social-link mx-3">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://www.facebook.com/keeplives.seguros" target="_blank" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -346,6 +368,8 @@
     </div>
   </div>
 </section>
+
+<!-------Contact End-------> 
 
 <!-------Contact End-------> 
 
@@ -399,27 +423,35 @@
 <script>
 	wow = new WOW();
 	wow.init();
-$(document).ready(function(e) {
+  $(document).ready(function(e) {
+  $('#video-icon').on('click', function(e) {
+    e.preventDefault();
+    $('.video-popup').css('display', 'flex');
+    $('.iframe-src').slideDown();
+  });
 
-	$('#video-icon').on('click',function(e){
-	e.preventDefault();
-	$('.video-popup').css('display','flex');
-	$('.iframe-src').slideDown();
-	});
-	$('.video-popup').on('click',function(e){
-	var $target = e.target.nodeName;
-	var video_src = $(this).find('iframe').attr('src');
-	if($target != 'IFRAME'){
-	$('.video-popup').fadeOut();
-	$('.iframe-src').slideUp();
-	$('.video-popup iframe').attr('src'," ");
-	$('.video-popup iframe').attr('src',video_src);
-	}
-	});
+  $('#exit-button').on('click', function(e) {
+    var video_src = $('.video-popup').find('iframe').attr('src');
+    $('.video-popup').fadeOut();
+    $('.iframe-src').slideUp();
+    $('.video-popup iframe').attr('src', " ");
+    $('.video-popup iframe').attr('src', video_src);
+  });
 
-	$('.slider').bxSlider({
-	pager: false
-	});
+  $('.video-popup').on('click', function(e) {
+    var $target = e.target.nodeName;
+    var video_src = $(this).find('iframe').attr('src');
+    if ($target != 'IFRAME' && $target != 'BUTTON') {
+      $('.video-popup').fadeOut();
+      $('.iframe-src').slideUp();
+      $('.video-popup iframe').attr('src', " ");
+      $('.video-popup iframe').attr('src', video_src);
+    }
+  });
+
+  $('.slider').bxSlider({
+    pager: false
+  });
 });
     
 $(window).on("scroll",function () {
